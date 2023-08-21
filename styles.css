@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #00FF00; /* Green background color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensure proper containment of child elements */
+  }
+  
+  .registration-section {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box; /* Include padding within the element's size */
+  }
+  
+  .data-section {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    margin-left: 70%; ?? MARGIN WILL MOVE THE BOX BUT WE WANT MORE
+    background-color: #f7f7f7;
+    display: none;
+    text-align: left;
+    box-sizing:content-box /* Include padding within the element's size */
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box; /* Include padding within the element's size */
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
