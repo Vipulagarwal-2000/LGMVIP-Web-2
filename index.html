@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Registration Form</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
@@ -14,23 +14,56 @@
         <div class="form-group">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required>
+          
         </div>
         <div class="form-group">
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" required>
         </div>
         <div class="form-group">
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" required>
+          <label for="website">Website:</label>
+          <input type="text" id="website" name="website">
         </div>
-        <button type="button" onclick="submitForm()">Register</button>
+        <div class="form-group">
+          <label>Gender:</label>
+          <label for="male"><input type="radio" id="male" name="gender" value="male"> Male</label>
+          <label for="female"><input type="radio" id="female" name="gender" value="female"> Female</label>
+        </div>
+        <div class="form-group">
+          <label for="skills">Skills:</label>
+          <select id="skills" name="skills" multiple>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+            <option value="PHP">PHP</option>
+            <option value="C#">C#</option>
+            <option value="Ruby">Ruby</option>
+            <option value="Swift">Swift</option>
+            <option value="SQL">SQL</option>
+            <option value="React">React</option>
+            <option value="Node.js">Node.js</option><!-- Add more skills as needed -->
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="image">Image:</label>
+          <input type="file" id="image" name="image">
+        </div>
+        <div class="form-group">
+          <label for="resume">Resume:</label>
+          <input type="file" id="resume" name="resume">
+        </div>
+        <button type="button" id="registerButton">Register</button>
+        <button type="button" id="clearButton">Clear Form</button>
       </form>
     </div>
-  </div>
-  <div class="data-section" id="displayData">
-    <h2>Registered Data:</h2>
-    <p><strong>Name:</strong> <span id="displayName"></span></p>
-    <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+    <div class="identity-card" id="identityCard">
+      <h2>Identity Card</h2>
+      <div class="identity-content">
+        <!-- Identity card content will be added dynamically here -->
+      </div>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>
