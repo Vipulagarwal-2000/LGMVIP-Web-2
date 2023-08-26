@@ -103,7 +103,7 @@ button {
   border: 2px solid #007bff;
 }
 
-/* Styling for the "View Resume" link */
+
 .data-content a {
   color: #007bff;
   text-decoration: none;
@@ -111,10 +111,9 @@ button {
   margin-top: 5px;
 }
 
-/* Additional styling for the image input */
+
 #image {
   display: block;
   margin-top: 5px;
 }
 
-/* ... Additional styling as needed ... */
